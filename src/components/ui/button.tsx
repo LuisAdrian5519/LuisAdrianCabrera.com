@@ -9,10 +9,13 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-primary text-primary-foreground hover:bg-primary/90 shadow-glow hover:shadow-glow/50",
+        // Slightly lighter fills so buttons contrast better on darker/colored backgrounds
+        default: "bg-primary/80 text-primary-foreground hover:bg-primary/90 shadow-glow hover:shadow-glow/50",
         destructive: "bg-destructive text-destructive-foreground hover:bg-destructive/90",
-        outline: "border border-border bg-card/50 backdrop-blur-sm hover:bg-card hover:border-primary/50",
-        secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
+  // Make outline buttons more visible by default (slightly lighter card bg + subtle shadow)
+  outline: "border border-border bg-card/60 backdrop-blur-sm hover:bg-card/80 hover:border-primary/50 shadow-sm",
+        // Make secondary a bit lighter as well
+        secondary: "bg-secondary/70 text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent/10 hover:text-accent",
         link: "text-primary underline-offset-4 hover:underline",
         hero: "bg-gradient-primary text-primary-foreground font-semibold shadow-glow hover:shadow-glow/70 hover:scale-105",

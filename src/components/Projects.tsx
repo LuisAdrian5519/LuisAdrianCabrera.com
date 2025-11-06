@@ -33,6 +33,14 @@ const Projects = () => {
       githubUrl: "https://github.com/Jessebnda/SpaceApps2024",
       type: "github",
     },
+    {
+      title: "Personal Portfolio Revamp",
+      description: "A refreshed personal portfolio built with TypeScript, React and Vite showcasing projects, blog posts and contact utilities.",
+      image: project1,
+      tech: ["TypeScript", "React", "Vite"],
+      githubUrl: "https://github.com/LuisAdrian5519/portfolio",
+      type: "github",
+    },
   ];
 
   return (

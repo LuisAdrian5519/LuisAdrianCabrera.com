@@ -1,4 +1,5 @@
 import React from "react";
+import { ExternalLink } from "lucide-react";
 
 const Experience = () => {
   return (
@@ -10,7 +11,7 @@ const Experience = () => {
           </h2>
 
           {/* Block 1 - Trimble */}
-          <div className="bg-gradient-card rounded-2xl p-8 mb-6 border border-border shadow-card backdrop-blur-sm w-full">
+          <div className="relative bg-gradient-card rounded-2xl p-8 mb-6 border border-border shadow-card backdrop-blur-sm w-full">
             <h1 className="text-2xl font-bold">Software Development Engineer in Test Intern - Trimble Inc.</h1>
             <h2 className="text-sm text-muted-foreground mt-1 mb-4">Jun. 2025 — Present · Mexicali, BC</h2>
             <ul className="list-disc pl-5 text-foreground/90">
@@ -22,10 +23,36 @@ const Experience = () => {
               <li>Collaborated with cross-functional Agile teams, participating in daily stand-ups, sprint planning, and
                 retrospectives, to deliver features aligned with stakeholders needs.</li>
             </ul>
+
+            {/* Tags for Block 1 */}
+            <div className="flex flex-wrap gap-3 mt-4">
+              {[
+                "Automation",
+                "AI",
+                "Testing",
+                "Agile",
+              ].map((tag) => (
+                <span
+                  key={tag}
+                  className="px-4 py-2 bg-primary/10 rounded-2xl border border-primary/20 text-primary text-sm font-medium hover:bg-primary/20 transition-colors"
+                >
+                  {tag}
+                </span>
+              ))}
+            </div>
+            <a
+              href="https://www.trimble.com/en/products/projectsight"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="absolute top-3 right-3 inline-flex items-center justify-center p-2 rounded hover:bg-background/10 text-primary"
+              aria-label="Open details"
+            >
+                <ExternalLink className="w-6 h-6" />
+            </a>
           </div>
 
           {/* Block 2 - MM Corporation */}
-          <div className="bg-gradient-card rounded-2xl p-8 mb-6 border border-border shadow-card backdrop-blur-sm w-full">
+          <div className="relative bg-gradient-card rounded-2xl p-8 mb-6 border border-border shadow-card backdrop-blur-sm w-full">
             <h1 className="text-2xl font-bold">Software Engineer Intern - MM Corporation</h1>
             <h2 className="text-sm text-muted-foreground mt-1 mb-4">Jun. 2024 — Jun. 2025 · Mexicali, BC</h2>
             <ul className="list-disc pl-5 text-foreground/90">
@@ -37,6 +64,33 @@ const Experience = () => {
                 pdfplumber, and RegEx to compare structured financial data from internal records and bank-issued statements,
                 eliminating 100% of manual input for the bank reconciliation process for BanBajío and BBVA México accounts.</li>
             </ul>
+
+            {/* Tags for Block 2 */}
+            <div className="flex flex-wrap gap-3 mt-4">
+              {[
+                "Web Development",
+                "Databases",
+                "API's",
+                "Data Analysis",
+                "Automation",
+              ].map((tag) => (
+                <span
+                  key={tag}
+                  className="px-4 py-2 bg-primary/10 rounded-2xl border border-primary/20 text-primary text-sm font-medium hover:bg-primary/20 transition-colors"
+                >
+                  {tag}
+                </span>
+              ))}
+            </div>
+            <a
+              href="https://www.facebook.com/MMCorpo"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="absolute top-3 right-3 inline-flex items-center justify-center p-2 rounded hover:bg-background/10 text-primary"
+              aria-label="Open details"
+            >
+                <ExternalLink className="w-6 h-6" />
+            </a>
           </div>
         </div>
       </div>
