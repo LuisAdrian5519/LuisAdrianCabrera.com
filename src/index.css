@@ -56,3 +56,20 @@ All colors MUST be HSL.
     @apply bg-background text-foreground;
   }
 }
+
+/* Navbar avatar styles */
+@layer components {
+  .navbar-avatar {
+    height: 2.5rem; /* fits nicely inside the h-16 (4rem) navbar */
+    width: 2.5rem;
+    border-radius: 9999px;
+    object-fit: cover;
+    border: 2px solid hsl(var(--border));
+    box-shadow: var(--shadow-glow);
+    transition: transform 200ms ease, box-shadow 200ms ease;
+  }
+
+  .navbar-avatar:hover {
+    transform: scale(1.06);
+  }
+}
