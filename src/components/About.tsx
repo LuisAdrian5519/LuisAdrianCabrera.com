@@ -24,7 +24,7 @@ const About = () => {
             About <span className="bg-gradient-primary bg-clip-text text-transparent">Me</span>
           </h2>
 
-          <div className="bg-gradient-card rounded-2xl p-8 mb-12 border border-border shadow-card backdrop-blur-sm">
+          <div className="bg-gradient-card rounded-2xl p-8 mb-6 border border-border shadow-card backdrop-blur-sm">
             <p className="text-lg text-foreground/90 leading-relaxed">
               Software Engineer passionate about developing end-to-end solutions for real-world problems. My experience 
               includes designing robust APIs, efficient Database management, Automation, and Web development. My personal 
@@ -33,8 +33,8 @@ const About = () => {
             </p>
           </div>
 
-          <div className="bg-gradient-card rounded-2xl p-8 border border-border shadow-card backdrop-blur-sm">
-            <div className="flex flex-wrap gap-4">
+          <div className="bg-transparent rounded-2xl p-6 border border-transparent shadow-none">
+            <div className="flex flex-wrap gap-4 justify-center">
               {skills.map((skill, index) => {
                 const Icon = skill.icon;
                 return (
