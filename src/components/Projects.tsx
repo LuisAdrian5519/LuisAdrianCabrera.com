@@ -1,35 +1,35 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Github } from "lucide-react";
-import project1 from "@/assets/project1.jpg";
-import project2 from "@/assets/project2.jpg";
-import project3 from "@/assets/project3.jpg";
+import project1 from "@/assets/project1.png";
+import project2 from "@/assets/project2.png";
+import project3 from "@/assets/project3.png";
 
 const Projects = () => {
   const projects = [
     {
-      title: "Dashboard Analytics",
-      description: "Plataforma de análisis de datos en tiempo real con visualizaciones interactivas y métricas avanzadas",
+      title: "CubeRT AI Cubesat Project",
+      description: "Cutting-edge microsatellite designed to transform the way scientists utilize AI in space exploration",
       image: project1,
-      tech: ["React", "TypeScript", "Tailwind", "Chart.js"],
+      tech: ["Python", "Bash", "Azure"],
       liveUrl: "#",
       githubUrl: "#",
     },
     {
-      title: "E-Commerce Platform",
-      description: "Tienda online completa con carrito de compras, pasarela de pago y gestión de inventario",
+      title: "Open Object Detection Dataset",
+      description: " 7500+ annotated images for object detection of the Moon, optimized for use with the YOLOv8",
       image: project2,
-      tech: ["Next.js", "Node.js", "PostgreSQL", "Stripe"],
+      tech: ["Azure", "Data Analysis"],
       liveUrl: "#",
       githubUrl: "#",
     },
     {
-      title: "Task Manager App",
-      description: "Aplicación de gestión de tareas con sincronización en tiempo real y colaboración en equipo",
+      title: "NASA Smart Chatbot",
+      description: "Full-Stack AI Chatbot Application, presented in NASA SpaceApps 2024",
       image: project3,
-      tech: ["React", "Firebase", "Redux", "Material-UI"],
+      tech: ["Python", "JavaScript", "Flask", "LLM's"],
       liveUrl: "#",
-      githubUrl: "#",
+      githubUrl: "https://github.com/Jessebnda/SpaceApps2024",
     },
   ];
 
@@ -37,12 +37,9 @@ const Projects = () => {
     <section id="projects" className="py-20 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl sm:text-4xl font-bold text-center mb-4">
-            Proyectos <span className="bg-gradient-primary bg-clip-text text-transparent">Destacados</span>
+          <h2 className="text-3xl sm:text-4xl font-bold text-center mb-12">
+            <span className="bg-gradient-primary bg-clip-text text-transparent">Projects</span>
           </h2>
-          <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-            Una selección de proyectos que demuestran mis habilidades y experiencia
-          </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.map((project, index) => (
