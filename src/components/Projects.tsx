@@ -1,6 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ExternalLink, Github } from "lucide-react";
+import { Github } from "lucide-react";
+import { SiKaggle, SiHuggingface } from "react-icons/si";
 import project1 from "@/assets/project1.png";
 import project2 from "@/assets/project2.png";
 import project3 from "@/assets/project3.png";
@@ -12,24 +13,25 @@ const Projects = () => {
       description: "Cutting-edge microsatellite designed to transform the way scientists utilize AI in space exploration",
       image: project1,
       tech: ["Python", "Bash", "Azure"],
-      liveUrl: "#",
       githubUrl: "#",
+      type: "github",
     },
     {
       title: "Open Object Detection Dataset",
       description: " 7500+ annotated images for object detection of the Moon, optimized for use with the YOLOv8",
       image: project2,
       tech: ["Azure", "Data Analysis"],
-      liveUrl: "#",
-      githubUrl: "#",
+      kaggleUrl: "#",
+      huggingfaceUrl: "#",
+      type: "dataset",
     },
     {
       title: "NASA Smart Chatbot",
       description: "Full-Stack AI Chatbot Application, presented in NASA SpaceApps 2024",
       image: project3,
       tech: ["Python", "JavaScript", "Flask", "LLM's"],
-      liveUrl: "#",
       githubUrl: "https://github.com/Jessebnda/SpaceApps2024",
+      type: "github",
     },
   ];
 
@@ -75,18 +77,30 @@ const Projects = () => {
                     ))}
                   </div>
 
-                  <div className="flex gap-3">
-                    <Button variant="outline" size="sm" className="flex-1" asChild>
-                      <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
-                        <ExternalLink className="w-4 h-4 mr-2" />
-                        Demo
-                      </a>
-                    </Button>
-                    <Button variant="ghost" size="sm" asChild>
-                      <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
-                        <Github className="w-4 h-4" />
-                      </a>
-                    </Button>
+                  <div className="flex gap-3 justify-center">
+                    {project.type === "github" ? (
+                      <Button variant="outline" size="sm" asChild>
+                        <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
+                          <Github className="w-4 h-4 mr-2" />
+                          GitHub
+                        </a>
+                      </Button>
+                    ) : (
+                      <>
+                        <Button variant="outline" size="sm" asChild>
+                          <a href={project.kaggleUrl} target="_blank" rel="noopener noreferrer">
+                            <SiKaggle className="w-4 h-4 mr-2" />
+                            Kaggle
+                          </a>
+                        </Button>
+                        <Button variant="outline" size="sm" asChild>
+                          <a href={project.huggingfaceUrl} target="_blank" rel="noopener noreferrer">
+                            <SiHuggingface className="w-4 h-4 mr-2" />
+                            HuggingFace
+                          </a>
+                        </Button>
+                      </>
+                    )}
                   </div>
                 </div>
               </Card>
