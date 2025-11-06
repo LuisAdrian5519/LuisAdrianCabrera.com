@@ -13,7 +13,7 @@ const Projects = () => {
       description: "Cutting-edge microsatellite designed to transform the way scientists utilize AI in space exploration",
       image: project1,
       tech: ["Python", "Bash", "Azure"],
-      githubUrl: "#",
+      githubUrl: "https://github.com/LuisAdrian5519/CubeRT_Cubesat",
       type: "github",
     },
     {
@@ -21,8 +21,8 @@ const Projects = () => {
       description: " 7500+ annotated images for object detection of the Moon, optimized for use with the YOLOv8",
       image: project2,
       tech: ["Azure", "Data Analysis"],
-      kaggleUrl: "#",
-      huggingfaceUrl: "#",
+      kaggleUrl: "https://www.kaggle.com/datasets/luisadrian5519/moon-detection-dataset-for-yolov8",
+      huggingfaceUrl: "https://huggingface.co/datasets/LuisAdrian5519/Moon_Detection_Dataset_for_YOLOv8",
       type: "dataset",
     },
     {
