@@ -23,11 +23,11 @@ const Navbar = () => {
   };
 
   const navItems = [
-    { label: "Inicio", id: "hero" },
-    { label: "Sobre mí", id: "about" },
-    { label: "Proyectos", id: "projects" },
-    { label: "Skills", id: "skills" },
-    { label: "Contacto", id: "contact" },
+    { label: "Home", id: "hero" },
+    { label: "About Me", id: "about" },
+    { label: "Experience", id: "skills" },
+    { label: "Projects", id: "projects" },
+    { label: "Contact", id: "contact" },
   ];
 
   return (
@@ -42,7 +42,7 @@ const Navbar = () => {
             onClick={() => scrollToSection("hero")}
             className="text-xl font-bold bg-gradient-primary bg-clip-text text-transparent hover:opacity-80 transition-opacity"
           >
-            {"<Dev />"}
+            {"Luis Adrian Cabrera"}
           </button>
 
           {/* Desktop Navigation */}
