@@ -5,6 +5,7 @@ import { SiKaggle, SiHuggingface } from "react-icons/si";
 import project1 from "@/assets/project1.png";
 import project2 from "@/assets/project2.png";
 import project3 from "@/assets/project3.png";
+import project4 from "@/assets/project4.png";
 
 const Projects = () => {
   const projects = [
@@ -12,7 +13,7 @@ const Projects = () => {
       title: "CubeRT AI Cubesat Project",
       description: "Cutting-edge microsatellite designed to transform the way scientists utilize AI in space exploration",
       image: project1,
-      tech: ["Python", "Bash", "Azure"],
+      tech: ["Machine Learning", "Python", "Azure"],
       githubUrl: "https://github.com/LuisAdrian5519/CubeRT_Cubesat",
       type: "github",
     },
@@ -20,25 +21,25 @@ const Projects = () => {
       title: "Open Object Detection Dataset",
       description: " 7500+ annotated images for object detection of the Moon, optimized for use with the YOLOv8",
       image: project2,
-      tech: ["Azure", "Data Analysis"],
+      tech: ["Data Analysis", "Azure"],
       kaggleUrl: "https://www.kaggle.com/datasets/luisadrian5519/moon-detection-dataset-for-yolov8",
       huggingfaceUrl: "https://huggingface.co/datasets/LuisAdrian5519/Moon_Detection_Dataset_for_YOLOv8",
       type: "dataset",
     },
     {
-      title: "NASA Smart Chatbot",
-      description: "Full-Stack AI Chatbot Application, presented in NASA SpaceApps 2024",
-      image: project3,
-      tech: ["Python", "JavaScript", "Flask", "LLM's"],
-      githubUrl: "https://github.com/Jessebnda/SpaceApps2024",
+      title: "Bank Reconciliation Automation",
+      description: "Automated inconsistencies detection between financial registers and bank declarations",
+      image: project4,
+      tech: ["Automation", "Python", "Pandas"],
+      githubUrl: "https://github.com/LuisAdrian5519/Bank-Reconciliation-Algorithm-Open-Source-Tool",
       type: "github",
     },
     {
-      title: "Personal Portfolio Revamp",
-      description: "A refreshed personal portfolio built with TypeScript, React and Vite showcasing projects, blog posts and contact utilities.",
-      image: project1,
-      tech: ["TypeScript", "React", "Vite"],
-      githubUrl: "https://github.com/LuisAdrian5519/portfolio",
+      title: "NASA Smart Chatbot",
+      description: "Full-Stack AI Chatbot Application, presented in NASA SpaceApps 2024",
+      image: project3,
+      tech: ["LLM's", "Python", "JavaScript", "Flask"],
+      githubUrl: "https://github.com/Jessebnda/SpaceApps2024",
       type: "github",
     },
   ];
