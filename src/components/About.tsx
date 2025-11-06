@@ -1,24 +1,7 @@
-import { Code2, Rocket, Users } from "lucide-react";
 import { Card } from "@/components/ui/card";
 
 const About = () => {
-  const highlights = [
-    {
-      icon: Code2,
-      title: "Desarrollo Full-Stack",
-      description: "Experiencia en frontend y backend, creando aplicaciones completas de punta a punta",
-    },
-    {
-      icon: Rocket,
-      title: "Innovación Constante",
-      description: "Siempre explorando nuevas tecnologías y mejores prácticas de desarrollo",
-    },
-    {
-      icon: Users,
-      title: "Trabajo en Equipo",
-      description: "Colaboración efectiva y comunicación clara en proyectos multidisciplinarios",
-    },
-  ];
+  
 
   return (
     <section id="about" className="py-20 bg-background">
@@ -43,18 +26,7 @@ const About = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {highlights.map((item, index) => (
-              <Card
-                key={index}
-                className="p-6 bg-card/50 backdrop-blur-sm border-border hover:border-primary/50 transition-all hover:shadow-glow group"
-              >
-                <item.icon className="w-10 h-10 text-primary mb-4 group-hover:scale-110 transition-transform" />
-                <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
-                <p className="text-muted-foreground text-sm">{item.description}</p>
-              </Card>
-            ))}
-          </div>
+          {/* Highlights removed as requested */}
         </div>
       </div>
     </section>
