@@ -39,7 +39,7 @@ const About = () => {
                 return (
                   <div
                     key={index}
-                    className="flex items-center gap-3 px-5 py-3 bg-gradient-card rounded-2xl border border-border backdrop-blur-sm hover:border-primary/50 transition-all"
+                    className="flex items-center gap-3 px-5 py-3 bg-card rounded-2xl border border-border backdrop-blur-sm hover:border-primary/50 transition-all shadow-sm"
                   >
                     <Icon className="w-5 h-5 text-primary" />
                     <span className="text-foreground font-medium">{skill.name}</span>
