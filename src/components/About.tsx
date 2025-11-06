@@ -1,5 +1,6 @@
 import { SiJavascript, SiPython, SiReact, SiNodedotjs, SiExpress, SiMysql, SiMongodb, SiAmazon, SiGit } from "react-icons/si";
-import { Cloud } from "lucide-react";
+import { VscAzure } from "react-icons/vsc";
+import { FaAws } from "react-icons/fa";
 
 const About = () => {
   const skills = [
@@ -8,11 +9,11 @@ const About = () => {
     { name: "React", icon: SiReact },
     { name: "Node.js", icon: SiNodedotjs },
     { name: "Express", icon: SiExpress },
+    { name: "Git", icon: SiGit },
     { name: "MySQL", icon: SiMysql },
     { name: "MongoDB", icon: SiMongodb },
-    { name: "Azure", icon: Cloud },
-    { name: "AWS", icon: SiAmazon },
-    { name: "Git", icon: SiGit },
+  { name: "Azure", icon: VscAzure },
+    { name: "AWS", icon: FaAws },
   ];
 
   return (
