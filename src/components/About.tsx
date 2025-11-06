@@ -1,17 +1,18 @@
-import { FileCode2, Code2, Component, Server, Zap, Database, Cloud, CloudCog, GitBranch } from "lucide-react";
+import { SiJavascript, SiPython, SiReact, SiNodedotjs, SiExpress, SiMysql, SiMongodb, SiAmazon, SiGit } from "react-icons/si";
+import { Cloud } from "lucide-react";
 
 const About = () => {
   const skills = [
-    { name: "JavaScript", icon: FileCode2 },
-    { name: "Python", icon: Code2 },
-    { name: "React", icon: Component },
-    { name: "Node.js", icon: Server },
-    { name: "Express", icon: Zap },
-    { name: "MySQL", icon: Database },
-    { name: "MongoDB", icon: Database },
+    { name: "JavaScript", icon: SiJavascript },
+    { name: "Python", icon: SiPython },
+    { name: "React", icon: SiReact },
+    { name: "Node.js", icon: SiNodedotjs },
+    { name: "Express", icon: SiExpress },
+    { name: "MySQL", icon: SiMysql },
+    { name: "MongoDB", icon: SiMongodb },
     { name: "Azure", icon: Cloud },
-    { name: "AWS", icon: CloudCog },
-    { name: "Git", icon: GitBranch },
+    { name: "AWS", icon: SiAmazon },
+    { name: "Git", icon: SiGit },
   ];
 
   return (
@@ -32,7 +33,6 @@ const About = () => {
           </div>
 
           <div className="bg-gradient-card rounded-2xl p-8 border border-border shadow-card backdrop-blur-sm">
-            <h3 className="text-2xl font-bold mb-6 text-foreground">Skills</h3>
             <div className="flex flex-wrap gap-4">
               {skills.map((skill, index) => {
                 const Icon = skill.icon;
