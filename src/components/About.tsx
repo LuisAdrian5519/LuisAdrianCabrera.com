@@ -1,5 +1,18 @@
-const About = () => {
+import { FileCode2, Code2, Component, Server, Zap, Database, Cloud, CloudCog, GitBranch } from "lucide-react";
 
+const About = () => {
+  const skills = [
+    { name: "JavaScript", icon: FileCode2 },
+    { name: "Python", icon: Code2 },
+    { name: "React", icon: Component },
+    { name: "Node.js", icon: Server },
+    { name: "Express", icon: Zap },
+    { name: "MySQL", icon: Database },
+    { name: "MongoDB", icon: Database },
+    { name: "Azure", icon: Cloud },
+    { name: "AWS", icon: CloudCog },
+    { name: "Git", icon: GitBranch },
+  ];
 
   return (
     <section id="about" className="py-20 bg-background">
@@ -18,7 +31,23 @@ const About = () => {
             </p>
           </div>
 
-          {/* Highlights removed as requested */}
+          <div className="bg-gradient-card rounded-2xl p-8 border border-border shadow-card backdrop-blur-sm">
+            <h3 className="text-2xl font-bold mb-6 text-foreground">Skills</h3>
+            <div className="flex flex-wrap gap-4">
+              {skills.map((skill, index) => {
+                const Icon = skill.icon;
+                return (
+                  <div
+                    key={index}
+                    className="flex items-center gap-3 px-5 py-3 bg-gradient-card rounded-2xl border border-border backdrop-blur-sm hover:border-primary/50 transition-all"
+                  >
+                    <Icon className="w-5 h-5 text-primary" />
+                    <span className="text-foreground font-medium">{skill.name}</span>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
         </div>
       </div>
     </section>
