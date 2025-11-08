@@ -70,7 +70,7 @@ const Experience = () => {
               {[
                 "Web Development",
                 "Databases",
-                "API's",
+                "APIs",
                 "Data Analysis",
                 "Automation",
               ].map((tag) => (
