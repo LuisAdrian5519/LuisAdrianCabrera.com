@@ -12,9 +12,11 @@ const Experience = () => {
 
           {/* Block 1 - Trimble */}
           <div className="relative bg-gradient-card rounded-2xl p-8 mb-6 border border-border shadow-card backdrop-blur-sm w-full">
-            <h1 className="text-2xl font-bold">Software Development Engineer in Test Intern - Trimble Inc.</h1>
+            <h1 className="text-2xl font-bold">Software Engineer Intern - Trimble Inc.</h1>
             <h2 className="text-sm text-muted-foreground mt-1 mb-4">Jun. 2025 — Present · Mexicali, BC</h2>
             <ul className="list-disc pl-5 text-foreground/90">
+              <li>Collaborated with the Core AI team to evaluate internal LLM Chatbot metrics using Python and Pytest,
+              leveraging Azure AI Foundry to ensure high-performance standards for internal AI solutions.</li>
               <li>Implemented an Appium MCP integration for Claude agents that accelerates creation of test reports and
               automation scripting through LLM interactions.</li>
               <li>Programmed QA test automation scripts using Selenium and Appium for web and mobile platforms, achieving a 
@@ -53,7 +55,7 @@ const Experience = () => {
 
           {/* Block 2 - MM Corporation */}
           <div className="relative bg-gradient-card rounded-2xl p-8 mb-6 border border-border shadow-card backdrop-blur-sm w-full">
-            <h1 className="text-2xl font-bold">Software Engineer Intern - MM Corporation</h1>
+            <h1 className="text-2xl font-bold">Software Development Intern - MM Corporation</h1>
             <h2 className="text-sm text-muted-foreground mt-1 mb-4">Jun. 2024 — Jun. 2025 · Mexicali, BC</h2>
             <ul className="list-disc pl-5 text-foreground/90">
                 <li>Designed a scalable CRM Web Application using React, Node.js, and Express, streamlining sales pipeline
