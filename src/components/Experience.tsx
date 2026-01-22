@@ -12,7 +12,7 @@ const Experience = () => {
 
           {/* Block 1 - Trimble */}
           <div className="relative bg-gradient-card rounded-2xl p-8 mb-6 border border-border shadow-card backdrop-blur-sm w-full">
-            <h1 className="text-2xl font-bold">Software Engineer Intern - Trimble Inc.</h1>
+            <h1 className="text-2xl font-bold">Software Development Engineer in Test Intern - Trimble Inc.</h1>
             <h2 className="text-sm text-muted-foreground mt-1 mb-4">Jun. 2025 — Present · Mexicali, BC</h2>
             <ul className="list-disc pl-5 text-foreground/90">
               <li>Collaborated with the Core AI team to evaluate internal LLM Chatbot metrics using Python and Pytest,
