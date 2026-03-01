@@ -15,6 +15,9 @@ const Experience = () => {
             <h1 className="text-2xl font-bold">Software Engineer Intern - Trimble Inc.</h1>
             <h2 className="text-sm text-muted-foreground mt-1 mb-4">Jun. 2025 — Present · Mexicali, BC</h2>
             <ul className="list-disc pl-5 text-foreground/90">
+              <li>Developed and maintained Cross-Platform features for ProjectSight Web & Mobile using .NET MAUI and
+              ASP.NET Core, optimizing application performance and resolving critical bugs to enhance overall user
+              experience.</li>
               <li>Collaborated with the Core AI team to evaluate internal LLM Chatbot metrics using Python and Pytest,
               leveraging Azure AI Foundry to ensure high-performance standards for internal AI solutions.</li>
               <li>Implemented an Appium MCP integration for Claude agents that accelerates creation of test reports and
